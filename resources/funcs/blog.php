@@ -38,6 +38,13 @@ function get_posts($id = null, $cat_id = null){
      FROM `posts`
      INNER JOIN `categories` ON `categories` . `id` = `posts` . `cat_id`";
 
+    if (isset($id)) {
+        $id = (int) $id;
+        $query .= "WHERE 'posts' . 'id' = {$id}";
+    }
+    
+    $query = "ORDER BY 'posts' . 'id' DESC";
+    
     $query = mysql_query($query);
     
     while ($row = mysql_fetch_assoc($query)){
