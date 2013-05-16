@@ -1,0 +1,30 @@
+/** {
+   border: 1px solid red !important;
+}*/
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: gray;
+    margin: 0 auto;
+}
+h1,h2,h3{color: black; }
+
+#nav li{
+	float:left;
+	padding-left: 28px;
+	list-style: none;
+}
+
+#main{
+    margin: 0 auto;
+    height: auto;
+    width: 50%;    
+    
+}
+
+#header{
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+    
+}

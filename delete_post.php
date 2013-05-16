@@ -6,16 +6,16 @@ if ( ! isset($_GET['id'])) {
     die();
 }
 
-delete('categories', $_GET['id']);
+delete('posts', $_GET['id']);
 
-header('Location: category_list.php');
+header('Location: index.php');
 die();
 ?>
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
     <body>
-    
+        
     </body>
     </head>
 </html>
